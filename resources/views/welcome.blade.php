@@ -27,6 +27,7 @@
             font-family: "MontserratAlternates";
             font-size: 1.2em;
             color: #603000;
+            padding-left: 10px;
         }
 
         .style-nav-menu .navbar-nav {
@@ -286,15 +287,27 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li>
-                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="#">Sabonetes Naturais <span class="sr-only">(current)</span></a>
                         <i class="fas fa-leaf"></i>
                     </li>
                     <li>
-                        <a class="nav-item nav-link" href="#">Features</a>
+                        <a class="nav-item nav-link active" href="#">Cabelo</a>
                         <i class="fas fa-leaf"></i>
                     </li>
                     <li>
-                        <a class="nav-item nav-link" href="#">Pricing</a>
+                        <a class="nav-item nav-link active" href="#">Pele</a>
+                        <i class="fas fa-leaf"></i>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link active" href="#">Maquiagem</a>
+                        <i class="fas fa-leaf"></i>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link active" href="#">Produtos Diversos</a>
+                        <i class="fas fa-leaf"></i>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link active" href="#">Minha Història</a>
                         <i class="fas fa-leaf"></i>
                     </li>
                 </ul>
