@@ -10,59 +10,59 @@
         .style-nav .bg-light {
             background-color: #c3f3c8!important;
         }
-        
+
         .style-nav .imagem-logo {
             padding-right: 0px;
         }
-        
+
         .style-nav .titulo-logo {
             padding-right: 0px;
         }
-        
+
         .style-nav-menu .bg-light {
             background-color: #c3f3c8!important;
         }
-        
+
         .style-nav-menu a {
             font-family: "MontserratAlternates";
             font-size: 1.2em;
             color: #603000;
         }
-        
+
         .style-nav-menu .navbar-nav {
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         .style-nav-menu .navbar-nav li {
             text-align: center;
         }
-        
+
         .style-nav-menu .navbar-nav li a {
             padding-bottom: 0px;
         }
-        
+
         .style-nav-menu .navbar-nav li i {
             color: #008000;
         }
-        
+
         .barra-superior a {
             padding-right: 35px;
             font-family: "MontserratAlternates";
             font-size: 1.2em;
             text-decoration: none;
         }
-        
+
         .barra-superior a i {
             font-size: 1.8em;
             color: #603000;
         }
-        
+
         .imagem-logo img {
             width: 75%;
             float: right;
         }
-        
+
         .titulo-logo h4 {
             font-family: "brush-script-std-medium";
             font-size: 2.1em;
@@ -75,16 +75,16 @@
             max-width:550px ;
 
         }*/
-        
+
         .carrossel-config img {
             max-height: 380px;
             width: 100%;
         }
-        
+
         .config-card {
             padding-top: 30px;
         }
-        
+
         .config-card .card h5 {
             text-align: center;
             font-family: "MontserratAlternates";
@@ -95,7 +95,7 @@
         /* .config-card .card  {
             border:1px solid #008000;
         }*/
-        
+
         .config-card .card .preco-produto {
             text-align: center;
             font-family: "MontserratAlternates";
@@ -103,7 +103,7 @@
             color: #fc791e;
             font-weight: 900;
         }
-        
+
         .config-card .card .parcela-produto {
             text-align: center;
             font-family: "MontserratAlternates";
@@ -111,9 +111,10 @@
             color: #603000;
             font-weight: 900;
         }
-        
+
         .config-card a {
-            font: bold 1em Arial, Monaco, monospace;
+            font-family: "MontserratAlternates";
+            font-size: 0.8em;
             font-style: normal;
             color: #ffff;
             background: #fc791e;
@@ -129,48 +130,57 @@
             padding: 5px 10px;
             cursor: pointer;
         }
-        
+
+        .titulos-home h3 {
+            font-family: "MontserratAlternates";
+            padding-top: 30px;
+            color: #fc791e;
+            font-weight: 900;
+            text-align: center;
+            font-size: 2em;
+        }
+
         .config-card a:active {
             cursor: pointer;
             position: relative;
             top: 2px;
         }
-        
+
         .botao-direita {
-            margin-left: 32px;
+            margin-left: 50px;
         }
-        
+
         .config-card a:hover {
             color: #FFF;
             text-decoration: none;
         }
-        
+
         .config-card .card img {
             max-height: 340px !important;
             min-height: 340px !important;
             border-radius: 20px 20px 0px 0px;
             border-bottom: 3px solid #fc791e;
         }
-        
+
         .config-card .card-body {
             position: relative;
         }
-        
+
         .config-card .card {
             max-height: 550px !important;
             border-radius: 20px 20px 20px 20px;
         }
-        
+
         .config-card .card {
             max-height: 550px !important;
         }
-        
+
         .balao-avisos p {
             color: #FFF;
             font-family: "MontserratAlternates";
             font-size: 0.8em;
         }
-        
+
         .balao-avisos {
             padding: 5px;
             height: 50px;
@@ -182,7 +192,7 @@
             margin: 10px;
         }
         /*celular*/
-        
+
         @media all and (max-width: 800px) {
             .imagem-logo img {
                 width: 20%;
@@ -282,16 +292,19 @@
                     <li>
                         <a class="nav-item nav-link" href="#">Features</a>
                         <i class="fas fa-leaf"></i>
-                        <li>
-                            <li>
-                                <a class="nav-item nav-link" href="#">Pricing</a>
-                                <i class="fas fa-leaf"></i>
-                            </li>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link" href="#">Pricing</a>
+                        <i class="fas fa-leaf"></i>
+                    </li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="container">
+        <div class="titulos-home">
+            <h3>Destaques</h3>
+        </div>
         <div class="row config-card">
             <div class="col-md-4">
                 <div class="card" style="width: 19rem;">
