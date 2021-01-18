@@ -203,6 +203,7 @@
             background-size: cover;
             border-radius: 100%;
             background-position: center;
+            margin-top: 2%;
         }
 
         .depoimentos-texto h4 {
@@ -243,6 +244,10 @@
             font-weight: 300;
             font-size: 1em;
         }
+
+        .menu-rodape li a img {
+            width: 50px;
+        }
         /*celular*/
 
         @media all and (max-width: 800px) {
@@ -274,6 +279,7 @@
             }
             .config-card .card {
                 margin-top: 20px;
+                margin-left: 20px;
             }
             .depoimentos-texto p {
                 font-family: "MontserratAlternates";
@@ -344,7 +350,7 @@
                 </a>
             </div>
         </section>
-        <!--Destaques-->
+        <!--Menu Principal-->
         <section>
             <div class='style-nav-menu'>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -506,6 +512,44 @@
                                     <a class="nav-item nav-link active" href="#"> <i class="fab fa-instagram"></i> <span class="sr-only">(current)</span></a>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="titulos-footer mt-2 mb-3">
+                                <h3>Formas de Pagamento</h3>
+                            </div>
+                            <div class="navbar navbar-expand-lg">
+                                <ul class="menu-rodape navbar-nav">
+                                    <li>
+                                        <a class="nav-item nav-link active" href="#"><img src="img/formas_pagamento/visa.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-item nav-link active" href="#"><img src="img/formas_pagamento/mastercard.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-item nav-link active" href="#"><img src="img/formas_pagamento/elo.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="titulos-footer mt-2 mb-3">
+                                <h3>Meios de Envio</h3>
+                            </div>
+                            <div class="navbar navbar-expand-lg">
+                                <ul class="menu-rodape navbar-nav">
+                                    <li>
+                                        <a class="nav-item nav-link active" href="#"><img src="img/metodos_envio/correios.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-item nav-link active" href="#"><img src="img/metodos_envio/pac.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-item nav-link active" href="#"><img src="img/metodos_envio/sedex.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
