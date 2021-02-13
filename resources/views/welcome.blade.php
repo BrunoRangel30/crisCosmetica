@@ -406,7 +406,7 @@
                                 <p class="preco-produto">R$ 23,99</p>
                                 <p class="parcela-produto">12 x de 4.99</p>
                                 <a href="#" class="">Comprar</a>
-                                <a href="#" class="botao-direita">Ver mais</a>
+                                <a href="{{route("detalhes_produtos", 'Argila Verde e Hortela')}}" class="botao-direita">Ver mais</a>
                             </div>
                         </div>
                     </div>
