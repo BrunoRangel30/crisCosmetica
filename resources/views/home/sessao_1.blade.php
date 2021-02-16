@@ -136,7 +136,7 @@
 
                         <a href="#" class="">Comprar</a>
 
-                        <a id='1' onclick="exibirDetalhes(this)" href="{{route('detalhes_produtos',['none' => 'Argila Verde e Hortela'])}}"class="botao-direita">Ver mais</a>
+                        <a id='1' onclick="exibirDetalhes(this)" href="{{route('detalhes_produtos','Argila Verde e Hortela')}}"class="botao-direita">Ver mais</a>
                     </div>
                 </div>
             </div>

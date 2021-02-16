@@ -5,12 +5,15 @@
         height: 60vh;
         width: 100%;
     }
-    
+    .card-produto{
+        margin-top:50px
+    }
+
     @font-face {
         font-family: MontserratAlternates;
         src: url("../css/bibliotecas/MontserratAlternates-Regular.otf");
     }
-    
+
     @font-face {
         font-family: brush-script-std-medium;
         src: url("../css/bibliotecas/brush-script-std-medium.otf");
@@ -19,11 +22,13 @@
 
 @section('content')
 <!--cabecalho inicial-->
-@component('home.cabecalho_superior'); @endcomponent
+@component('home.cabecalho_superior');
+@endcomponent
 <!--Menu Principal-->
-@component('home.menu_principal'); @endcomponent
+@component('home.menu_principal');
+@endcomponent
 <div class="container">
-    <div class="row">
+    <div class="row card-produto shadow-lg p-3 mb-5 bg-white rounded">
         <div class="col-md-6">
             <img class="imagem-det-prod" src="../img/argila_verde_e_ hortela.jpeg" alt="Card image cap">
         </div>
@@ -48,15 +53,17 @@
             </div>
             <a>Não sei meu cep</a>
         </div>
-    </div>
-    <div class="row">
-        <ul>
-            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit non odio, porttitor ultricies scelerisque ex lobortis aliquet et pulvinar, tincidunt id habitant facilisi eros orci eget cras. Consectetur vestibulum sociosqu placerat duis fermentum dapibus,
-                sapien egestas nam dictumst quis, augue pharetra ornare est morbi. Tempor cubilia vitae dictumst condimentum dis suscipit bibendum libero magnis eleifend imperdiet, mus velit pellentesque eros litora parturient praesent erat duis nec tincidunt,
-                in at ex primis lectus et augue ipsum molestie quisque. Congue mollis velit turpis natoque habitant euismod malesuada, eros efficitur fames torquent tempus sollicitudin rutrum diam, donec curabitur aenean facilisis dolor vulputate. Nam
-                montes elit a inceptos nisl odio ligula aptent aenean imperdiet eu, dis vel arcu pharetra luctus at sagittis semper euismod.</li>
-        </ul>
+        <div class="row p-4">
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipiscing elit non odio, porttitor ultricies scelerisque ex lobortis aliquet et pulvinar, tincidunt id habitant facilisi eros orci eget cras. Consectetur vestibulum sociosqu placerat duis fermentum dapibus,
+                    sapien egestas nam dictumst quis, augue pharetra ornare est morbi. Tempor cubilia vitae dictumst condimentum dis suscipit bibendum libero magnis eleifend imperdiet, mus velit pellentesque eros litora parturient praesent erat duis nec tincidunt,
+                    in at ex primis lectus et augue ipsum molestie quisque. Congue mollis velit turpis natoque habitant euismod malesuada, eros efficitur fames torquent tempus sollicitudin rutrum diam, donec curabitur aenean facilisis dolor vulputate. Nam
+                    montes elit a inceptos nisl odio ligula aptent aenean imperdiet eu, dis vel arcu pharetra luctus at sagittis semper euismod.</li>
+            </ul>
 
+        </div>
     </div>
 </div>
+@component('rodape.footer');
+@endcomponent
 @endsection

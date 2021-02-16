@@ -90,13 +90,13 @@
                         <div class="navbar navbar-expand-lg">
                             <ul class="menu-rodape navbar-nav">
                                 <li>
-                                    <a class="nav-item nav-link active" href="#"><img src="img/formas_pagamento/visa.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link active" href="#"><img src="{{asset('img/formas_pagamento/visa.png')}}" alt=""> <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li>
-                                    <a class="nav-item nav-link active" href="#"><img src="img/formas_pagamento/mastercard.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link active" href="#"><img src="{{asset('img/formas_pagamento/mastercard.png')}}" alt=""> <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li>
-                                    <a class="nav-item nav-link active" href="#"><img src="img/formas_pagamento/elo.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link active" href="#"><img src="{{asset('img/formas_pagamento/elo.png')}}" alt=""> <span class="sr-only">(current)</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -108,13 +108,13 @@
                         <div class="navbar navbar-expand-lg">
                             <ul class="menu-rodape navbar-nav">
                                 <li>
-                                    <a class="nav-item nav-link active" href="#"><img src="img/metodos_envio/correios.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link active" href="#"><img src="{{asset('img/metodos_envio/correios.png')}}" alt=""> <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li>
-                                    <a class="nav-item nav-link active" href="#"><img src="img/metodos_envio/pac.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link active" href="#"><img src="{{asset('img/metodos_envio/pac.png')}}" alt=""> <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li>
-                                    <a class="nav-item nav-link active" href="#"><img src="img/metodos_envio/sedex.png" alt=""> <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link active" href="#"><img src="{{asset('img/metodos_envio/sedex.png')}}" alt=""> <span class="sr-only">(current)</span></a>
                                 </li>
                             </ul>
                         </div>
