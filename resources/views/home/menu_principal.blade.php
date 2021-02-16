@@ -1,6 +1,7 @@
 <style>
     .style-nav-menu .bg-light {
         background-color: #c3f3c8!important;
+        border-top: 1px solid #FFFF;
     }
 
     .style-nav-menu a {
@@ -25,6 +26,7 @@
 
     .style-nav-menu .navbar-nav li i {
         color: #008000;
+
     }
 </style>
 
