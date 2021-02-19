@@ -47,7 +47,7 @@ class CarrinhoController extends Controller
      */
     public function show(Carrinho $carrinho)
     {
-        //
+       return view('carrinho.carrinho');
     }
 
     /**

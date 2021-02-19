@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/detalhes_produtos/{nome}', 'App\Http\Controllers\Produtos\ProdutosController@detalhesProdutos')->name('detalhes_produtos');
+Route::get('/carrinho_resumo/{nome}', 'App\Http\Controllers\Carrinho\CarrinhoController@show')->name('carrinho_resumo');
 
 
 

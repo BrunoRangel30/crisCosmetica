@@ -4,39 +4,46 @@
     body {
         height: 100%;
     }
-    
+
     @font-face {
         font-family: MontserratAlternates;
         src: url("css/bibliotecas/MontserratAlternates-Regular.otf");
     }
-    
+
     @font-face {
         font-family: brush-script-std-medium;
         src: url("css/bibliotecas/brush-script-std-medium.otf");
     }
     /*subtitulos*/
-    
+
+    .titulo {
+        font-family: "MontserratAlternates";
+        color: #fc791e;
+        font-weight: 900;
+        font-size: 1.7em;
+    }
+
     .subtitulos {
         font-family: "MontserratAlternates";
         font-size: 1.3em;
         color: #603000;
         font-weight: 900
     }
-    
+
     .subtitulos-2 {
         font-family: "MontserratAlternates";
         font-size: 1.2em;
         color: #fc791e;
         font-weight: 900;
     }
-    
+
     .subtitulos-3 {
         font-family: "MontserratAlternates";
         font-size: 1em;
         color: #603000;
         font-weight: 900;
     }
-    
+
     .subtitulos-4 {
         font-family: "MontserratAlternates";
         font-size: 0.8em;
@@ -44,7 +51,7 @@
         font-weight: 900;
     }
     /*botoes*/
-    
+
     .style-botao a {
         font-family: "MontserratAlternates";
         font-size: 0.8em;
@@ -62,18 +69,18 @@
         padding: 5px 10px;
         cursor: pointer;
     }
-    
+
     .style-botao a:active {
         cursor: pointer;
         position: relative;
         top: 2px;
     }
-    
+
     .style-botao a:hover {
         color: #FFF;
         text-decoration: none;
     }
-    
+
     .botao2 a {
         font-family: "MontserratAlternates";
         font-size: 0.8em;
@@ -91,12 +98,12 @@
         padding: 5px 10px;
         cursor: pointer;
     }
-    
+
     .botao2 a:hover {
         color: #FFF;
         text-decoration: none;
     }
-    
+
     .font-text {
         font-family: "MontserratAlternates";
         padding-top: 10px;
