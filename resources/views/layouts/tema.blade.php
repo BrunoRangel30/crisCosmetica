@@ -50,6 +50,13 @@
         color: #603000;
         font-weight: 900;
     }
+
+    .subtitulos-5 {
+        font-family: "MontserratAlternates";
+        font-size: 1em;
+        color: #fc791e;
+        font-weight: 900;
+    }
     /*botoes*/
 
     .style-botao a {

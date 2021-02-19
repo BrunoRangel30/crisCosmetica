@@ -61,6 +61,38 @@
         color: #fff;
         cursor: pointer;
     }
+
+    .formas-envio {
+        display: inline-flex;
+        border: 3px inset #604a00bb;
+        border-radius: 5px 5px 5px 5px;
+        margin-left: 8px;
+        margin-top: 8px;
+    }
+
+    .formas-envio-desmarcado {
+        display: inline-flex;
+        border-radius: 5px 5px 5px 5px;
+        margin-left: 8px;
+        margin-top: 8px;
+    }
+
+    .formas-envio i {
+        border-right: 3px inset #604a00bb;
+        background-color: #fc791e;
+        color: #ffff;
+        font-size: 1.3em;
+    }
+
+    .formas-envio-desmarcado i {
+        background-color: #FFF;
+        color: #fc791e;
+        font-size: 1.3em;
+    }
+
+    .inf-envio {
+        display: block;
+    }
     /*
     /*
 
@@ -90,6 +122,27 @@
             text-align: center;
             border-radius: 5px 5px 5px 5px;
         }
+        .style-botao a {
+            font-family: "MontserratAlternates";
+            font-size: 0.8em;
+            font-style: normal;
+            color: #ffff !important;
+            background: #fc791e;
+            border: 3px inset #60300063;
+            text-shadow: 0px -1px 10px #603000;
+            box-shadow: 1px 1px 9px #000000;
+            -moz-box-shadow: 1px 1px 9px #000000;
+            -webkit-box-shadow: 1px 1px 9px #000000;
+            border-radius: 53px 0px 90px 40px;
+            -moz-border-radius: 83px 0px 90px 40px;
+            -webkit-border-radius: 83px 0px 90px 40px;
+            padding: 5px 10px;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+            margin-left: auto;
+            text-align: center;
+        }
     }
 </style>
 
@@ -118,73 +171,79 @@
                         <p class="subtitulos-2 pt-3"> R$ 12,39</p>
                     </div>
                 </div>
-                <div class="row card-produto  bg-white rounded img">
-                    <div class="col">
+                <div class="row card-produto bg-white rounded img">
+                    <div class="col-md-4">
                         <img class="imagem-det-prod" src="../img/argila_verde_e_ hortela.jpeg" alt="Card image cap">
                     </div>
                     <div class="col">
-                        <p>Argilaverde e hortela</p>
-                        <p>1</p>
-                    </div>
-                    <div class="col">
-                        <p><i class="far fa-trash-alt"></i></p>
-                        <p> R$ 12,39</p>
+                        <p class="subtitulos">Argila verde e hortela</p>
+                        <p class="subtitulos"><i class="far fa-trash-alt"></i></p>
+                        <div class="botao-soma">
+                            <i class="fas fa-minus"></i>
+                            <p>1</p>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <p class="subtitulos-2 pt-3"> R$ 12,39</p>
                     </div>
                 </div>
-                <div class="row card-produto bg-white rounded img">
+                <div class="row pt-2">
                     <div class="col">
-                        <p>SubTotal sem Frete</p>
+                        <p class="subtitulos">SubTotal sem Frete</p>
                     </div>
                     <div class="col">
-                        <p> R$ 12,39</p>
+                        <p class="subtitulos-2"> R$ 12,39</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="shadow-lg p-3 mb-5 bg-white rounded">
-                <h3>Formas de entrega </h3>
+                <h3 class="titulo">Formas de entrega </h3>
                 <!--caso tenha inserido o cep-->
                 <div class="row">
                     <div class="col">
-                        <p>Cep: 39270-0000</p>
+                        <p class="subtitulos-3 p-2">Cep: 39270-0000</p>
                     </div>
-                    <div class="col">
+                    <div class="col style-botao p-2">
                         <a>alterar Cep</a>
                     </div>
                 </div>
-                <h4>Envio a Domicílio </h4>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                      PAC
-                    </label>
+                <h4 class="subtitulos-5">Envio a Domicílio </h4>
+                <div class="formas-envio">
+                    <i class="far fa-check-square p-3"></i>
+                    <div class="inf-envio">
+                        <p class="subtitulos-3 m-1 pl-1">PAC Correios</p>
+                        <p class="subtitulos-3 m-1 pl-1">Chega ate dia 21/03/2021</p>
+                    </div>
+                    <p class="subtitulos-5 pl-3 pt-3 pr-3">32,90</p>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                      SEDEX
-                    </label>
+                <div class="formas-envio-desmarcado">
+                    <i class="far fa-square p-3"></i>
+                    <div class="inf-envio">
+                        <p class="subtitulos-3 m-1">PAC Correios</p>
+                        <p class="subtitulos-3 m-1">Chega ate dia 21/03/2021</p>
+                    </div>
+                    <p class="subtitulos-5 pl-3 pt-3 pr-3">32,90</p>
                 </div>
-                <h3>Outras Informações </h3>
+                <h3 class="subtitulos-5 pt-2">Outras Informações </h3>
                 <div class="row">
                     <div class="col">
-                        <a>Política de troca e devolução</a>
+                        <a class="subtitulos-4 p-2">Política de troca e devolução</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p>Total</p>
+                        <p class="subtitulos pt-3">Total</p>
                     </div>
                     <div class="col">
-                        <p>1736</p>
+                        <p class="subtitulos pt-3"> R$ 1736</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
+                <div class="row style-botao">
+                    <div class="col-md-6 p-3">
                         <a>Finalizar Compra</a>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6 p-3">
                         <a>Continuar comprando</a>
                     </div>
                 </div>
