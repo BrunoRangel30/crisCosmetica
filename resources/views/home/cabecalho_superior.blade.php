@@ -92,7 +92,7 @@
                         @if (Route::has('register'))
                         {{--<a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>--}}
                         @endif
-                        <a href="{{ route('login') }}" data-toggle="tooltip" data-placement="bottom" title='Meu carrinho' class="inf-menu text-sm text-gray-700 underline"> <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">0</span></a>
+                        <a href="{{route('carrinho_resumo','Argila Verde e Hortela')}}" data-toggle="tooltip" data-placement="bottom" title='Meu carrinho' class="inf-menu text-sm text-gray-700 underline"> <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">0</span></a>
                         <a href="{{ route('login') }}" class="inf-menu text-sm text-gray-700 underline"><i class="fab fa-instagram"></i></a>
                         <a href="{{ route('login') }}" class="inf-menu text-sm text-gray-700 underline"><i class="fab fa-whatsapp"></i></a>
                    {{-- @endauth--}}
