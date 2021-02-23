@@ -1,39 +1,39 @@
 <style>
-      /* .style-nav nav {
+    /* .style-nav nav {
             /* position: fixed;
             z-index: 1;
             width: 100%;
         }*/
-
+    
     .style-nav .bg-light {
         background-color: #c3f3c8!important;
     }
-
+    
     .style-nav .imagem-logo {
         padding-right: 0px;
     }
-
+    
     .style-nav .titulo-logo {
         padding-right: 0px;
     }
-
+    
     .barra-superior a {
         padding-right: 35px;
         font-family: "MontserratAlternates";
         font-size: 1.2em;
         text-decoration: none;
     }
-
+    
     .barra-superior a i {
         font-size: 1.8em;
         color: #603000;
     }
-
+    
     .imagem-logo img {
         width: 75%;
         float: right;
     }
-
+    
     .titulo-logo h4 {
         font-family: "brush-script-std-medium";
         font-size: 2.1em;
@@ -42,7 +42,7 @@
         padding-top: 10px;
     }
     /*celular*/
-
+    
     @media all and (max-width: 800px) {
         .imagem-logo img {
             width: 20%;
@@ -71,6 +71,23 @@
             padding-top: 10px;
         }
     }
+    
+    .tooltip-login {
+        position: absolute;
+        z-index: 1;
+        margin-top: 160px;
+        border: 3px inset #604a00bb;
+        width: 260px;
+        font-size: 0.7em;
+        text-align: center;
+        background-color: #ffff
+    }
+    
+    .balao {
+        position: relative;
+        display: block;
+        padding: 15px;
+    }
 </style>
 <section>
     <div class='style-nav'>
@@ -84,19 +101,19 @@
                 </div>
             </div>
             <form class="barra-superior form-inline my-2 my-lg-0">
-              {{--  @if (Route::has('login'))--}}
-                  {{--  @auth--}}
-                        <a data-toggle="tooltip" href="{{ url('/dashboard') }}" class="inf-menu text-sm text-gray-700 underline"></a>
-                       {{-- @else--}}
-                        <a data-toggle="tooltip" data-placement="bottom" title='Login' href="{{ route('login') }}" class="text-sm text-gray-700 underline"><i class="far fa-user"></i></a>
-                        @if (Route::has('register'))
-                        {{--<a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>--}}
-                        @endif
-                        <a href="{{route('carrinho_resumo','Argila Verde e Hortela')}}" data-toggle="tooltip" data-placement="bottom" title='Meu carrinho' class="inf-menu text-sm text-gray-700 underline"> <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">0</span></a>
-                        <a href="{{ route('login') }}" class="inf-menu text-sm text-gray-700 underline"><i class="fab fa-instagram"></i></a>
-                        <a href="{{ route('login') }}" class="inf-menu text-sm text-gray-700 underline"><i class="fab fa-whatsapp"></i></a>
-                   {{-- @endauth--}}
-               {{-- @endif--}}
+                {{-- @if (Route::has('login'))--}} {{-- @auth--}}
+                <a data-toggle="tooltip" href="{{ url('/dashboard') }}" class="inf-menu text-sm text-gray-700 underline"></a>
+                {{-- @else--}}
+                <a data-toggle="tooltip" data-placement="bottom" title='Login' href="{{ route('login') }}" class="text-sm text-gray-700"><i class="far fa-user"></i></a>
+                <div class="tooltip-login">
+                    <a class="row balao">entrar</a>
+                    <a class="row balao">cadastro</a>
+                </div>
+                @if (Route::has('register')) {{--
+                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>--}} @endif
+                <a href="{{route('carrinho_resumo','Argila Verde e Hortela')}}" data-toggle="tooltip" data-placement="bottom" title='Meu carrinho' class="inf-menu text-sm text-gray-700 underline"> <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">0</span></a>
+                <a href="{{ route('login') }}" class="inf-menu text-sm text-gray-700 underline"><i class="fab fa-instagram"></i></a>
+                <a href="{{ route('login') }}" class="inf-menu text-sm text-gray-700 underline"><i class="fab fa-whatsapp"></i></a> {{-- @endauth--}} {{-- @endif--}}
             </form>
         </nav>
     </div>
