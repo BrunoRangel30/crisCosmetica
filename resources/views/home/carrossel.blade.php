@@ -2,6 +2,7 @@
     .carrossel-config img {
         max-height: 380px;
         width: 100%;
+        z-index: 0;
     }
     /*  .carrossel-config .carousel-inner{
             max-height:250px ;

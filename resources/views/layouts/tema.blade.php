@@ -75,6 +75,7 @@
         -webkit-border-radius: 83px 0px 90px 40px;
         padding: 5px 10px;
         cursor: pointer;
+        z-index: 1 !important;
     }
 
     .style-botao a:active {

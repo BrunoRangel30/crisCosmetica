@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +26,10 @@ Route::get('/carrinho_resumo/{nome}', 'App\Http\Controllers\Carrinho\CarrinhoCon
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+    return Redirect::intended();
 })->name('dashboard');
+
+Route::get('/sair', function () {
+    Auth::logout();
+    return Redirect::intended();
+})->name('sair');
