@@ -152,104 +152,107 @@
 <!--Menu Principal-->
 @component('home.menu_principal'); @endcomponent
 <div class="container">
-    <div class="row mt-5">
-        <div class="col">
-            <div class="shadow-lg p-3 mb-5 bg-white rounded">
-                <h3 class="titulo"> Itens do Carrinho</h3>
-                <div class="row card-produto bg-white rounded img">
-                    <div class="col-md-4">
-                        <img class="imagem-det-prod" src="../img/argila_verde_e_ hortela.jpeg" alt="Card image cap">
-                    </div>
-                    <div class="col">
-                        <p class="subtitulos">Argila verde e hortela</p>
-                        <p class="subtitulos"><i class="far fa-trash-alt"></i></p>
-                        <div class="botao-soma">
-                            <i class="fas fa-minus"></i>
-                            <p>1</p>
-                            <i class="fas fa-plus"></i>
+    <form action="{{route('finalizar')}}" method="POST">
+        @csrf
+        <div class="row mt-5">
+            <div class="col">
+                <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                    <h3 class="titulo"> Itens do Carrinho</h3>
+                    <div class="row card-produto bg-white rounded img">
+                        <div class="col-md-4">
+                            <img class="imagem-det-prod" src="../img/argila_verde_e_ hortela.jpeg" alt="Card image cap">
                         </div>
-                        <p class="subtitulos-2 pt-3"> R$ 12,39</p>
+                        <div class="col">
+                            <p class="subtitulos">Argila verde e hortela</p>
+                            <p class="subtitulos"><i class="far fa-trash-alt"></i></p>
+                            <div class="botao-soma">
+                                <i class="fas fa-minus"></i>
+                                <p>1</p>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <p class="subtitulos-2 pt-3"> R$ 12,39</p>
+                        </div>
+                    </div>
+                    <div class="row card-produto bg-white rounded img">
+                        <div class="col-md-4">
+                            <img class="imagem-det-prod" src="../img/argila_verde_e_ hortela.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="col">
+                            <p class="subtitulos">Argila verde e hortela</p>
+                            <p class="subtitulos"><i class="far fa-trash-alt"></i></p>
+                            <div class="botao-soma">
+                                <i class="fas fa-minus"></i>
+                                <p>1</p>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <p class="subtitulos-2 pt-3"> R$ 12,39</p>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col">
+                            <p class="subtitulos">SubTotal sem Frete</p>
+                        </div>
+                        <div class="col">
+                            <p class="subtitulos-2"> R$ 12,39</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row card-produto bg-white rounded img">
-                    <div class="col-md-4">
-                        <img class="imagem-det-prod" src="../img/argila_verde_e_ hortela.jpeg" alt="Card image cap">
-                    </div>
-                    <div class="col">
-                        <p class="subtitulos">Argila verde e hortela</p>
-                        <p class="subtitulos"><i class="far fa-trash-alt"></i></p>
-                        <div class="botao-soma">
-                            <i class="fas fa-minus"></i>
-                            <p>1</p>
-                            <i class="fas fa-plus"></i>
+            </div>
+            <div class="col">
+                <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                    <h3 class="titulo">Formas de entrega </h3>
+                    <!--caso tenha inserido o cep-->
+                    <div class="row">
+                        <div class="col">
+                            <p class="subtitulos-3 p-2">Cep: 39270-0000</p>
                         </div>
-                        <p class="subtitulos-2 pt-3"> R$ 12,39</p>
+                        <div class="col style-botao p-2">
+                            <a>alterar Cep</a>
+                        </div>
                     </div>
-                </div>
-                <div class="row pt-2">
-                    <div class="col">
-                        <p class="subtitulos">SubTotal sem Frete</p>
+                    <h4 class="subtitulos-5">Envio a Domicílio </h4>
+                    <div class="formas-envio">
+                        <i class="far fa-check-square p-3"></i>
+                        <div class="inf-envio">
+                            <p class="subtitulos-3 m-1 pl-1">PAC Correios</p>
+                            <p class="subtitulos-3 m-1 pl-1">Chega ate dia 21/03/2021</p>
+                        </div>
+                        <p class="subtitulos-5 pl-3 pt-3 pr-3">32,90</p>
                     </div>
-                    <div class="col">
-                        <p class="subtitulos-2"> R$ 12,39</p>
+                    <div class="formas-envio-desmarcado">
+                        <i class="far fa-square p-3"></i>
+                        <div class="inf-envio">
+                            <p class="subtitulos-3 m-1">PAC Correios</p>
+                            <p class="subtitulos-3 m-1">Chega ate dia 21/03/2021</p>
+                        </div>
+                        <p class="subtitulos-5 pl-3 pt-3 pr-3">32,90</p>
+                    </div>
+                    <h3 class="subtitulos-5 pt-2">Outras Informações </h3>
+                    <div class="row">
+                        <div class="col">
+                            <a class="subtitulos-4 p-2">Política de troca e devolução</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="subtitulos pt-3">Total</p>
+                        </div>
+                        <div class="col">
+                            <p class="subtitulos pt-3"> R$ 1736</p>
+                        </div>
+                    </div>
+                    <div class="row style-botao">
+                        <div class="col-md-6 p-3">
+                            <button type="submit"><a>Finalizar Compra</a></button>
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <a>Continuar comprando</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="shadow-lg p-3 mb-5 bg-white rounded">
-                <h3 class="titulo">Formas de entrega </h3>
-                <!--caso tenha inserido o cep-->
-                <div class="row">
-                    <div class="col">
-                        <p class="subtitulos-3 p-2">Cep: 39270-0000</p>
-                    </div>
-                    <div class="col style-botao p-2">
-                        <a>alterar Cep</a>
-                    </div>
-                </div>
-                <h4 class="subtitulos-5">Envio a Domicílio </h4>
-                <div class="formas-envio">
-                    <i class="far fa-check-square p-3"></i>
-                    <div class="inf-envio">
-                        <p class="subtitulos-3 m-1 pl-1">PAC Correios</p>
-                        <p class="subtitulos-3 m-1 pl-1">Chega ate dia 21/03/2021</p>
-                    </div>
-                    <p class="subtitulos-5 pl-3 pt-3 pr-3">32,90</p>
-                </div>
-                <div class="formas-envio-desmarcado">
-                    <i class="far fa-square p-3"></i>
-                    <div class="inf-envio">
-                        <p class="subtitulos-3 m-1">PAC Correios</p>
-                        <p class="subtitulos-3 m-1">Chega ate dia 21/03/2021</p>
-                    </div>
-                    <p class="subtitulos-5 pl-3 pt-3 pr-3">32,90</p>
-                </div>
-                <h3 class="subtitulos-5 pt-2">Outras Informações </h3>
-                <div class="row">
-                    <div class="col">
-                        <a class="subtitulos-4 p-2">Política de troca e devolução</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p class="subtitulos pt-3">Total</p>
-                    </div>
-                    <div class="col">
-                        <p class="subtitulos pt-3"> R$ 1736</p>
-                    </div>
-                </div>
-                <div class="row style-botao">
-                    <div class="col-md-6 p-3">
-                        <a>Finalizar Compra</a>
-                    </div>
-                    <div class="col-md-6 p-3">
-                        <a>Continuar comprando</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </form>
 </div>
-</div>
-@component('rodape.footer'); @endcomponent @endsection
+@component('rodape.footer') @endcomponent
+@endsection

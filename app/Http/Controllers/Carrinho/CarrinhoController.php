@@ -17,6 +17,15 @@ class CarrinhoController extends Controller
     {
         //
     }
+    public function finalizarCompra()
+    {
+      return view('carrinho.finalizar-compra');
+    }
+
+    public function finalizarCartao()
+    {
+      return view('carrinho.menu_cartao_credito');
+    }
 
     /**
      * Show the form for creating a new resource.

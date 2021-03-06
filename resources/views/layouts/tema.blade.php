@@ -84,6 +84,12 @@
         top: 2px;
     }
 
+    .style-botao button:focus {
+        outline: thin dotted;
+        outline: 0px auto -webkit-focus-ring-color;
+        outline-offset: 0px;
+    }
+
     .style-botao a:hover {
         color: #FFF;
         text-decoration: none;

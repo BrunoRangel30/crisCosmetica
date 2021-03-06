@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\URL;
 
 
 /*
@@ -17,11 +18,14 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
+
     return view('welcome');
 });
 
 Route::get('/detalhes_produtos/{nome}', 'App\Http\Controllers\Produtos\ProdutosController@detalhesProdutos')->name('detalhes_produtos');
 Route::get('/carrinho_resumo/{nome}', 'App\Http\Controllers\Carrinho\CarrinhoController@show')->name('carrinho_resumo');
+Route::post('/finalizar', 'App\Http\Controllers\Carrinho\CarrinhoController@finalizarCompra')->name('finalizar');
+Route::get('/cartao', 'App\Http\Controllers\Carrinho\CarrinhoController@finalizarCartao')->name('cartao');
 
 
 
@@ -31,5 +35,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/sair', function () {
     Auth::logout();
-    return Redirect::intended();
+   return redirect(url()->previous());
 })->name('sair');
