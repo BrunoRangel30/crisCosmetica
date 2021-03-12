@@ -59,7 +59,7 @@
     }
     /*botoes*/
 
-    .style-botao a {
+    .style-botao {
         font-family: "MontserratAlternates";
         font-size: 0.8em;
         font-style: normal;
@@ -76,6 +76,9 @@
         padding: 5px 10px;
         cursor: pointer;
         z-index: 1 !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .style-botao a:active {
@@ -84,7 +87,7 @@
         top: 2px;
     }
 
-    .style-botao button:focus {
+    .style-botao :focus {
         outline: thin dotted;
         outline: 0px auto -webkit-focus-ring-color;
         outline-offset: 0px;
@@ -95,7 +98,14 @@
         text-decoration: none;
     }
 
-    .botao2 a {
+    .style-botao button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .botao2 button {
         font-family: "MontserratAlternates";
         font-size: 0.8em;
         font-style: normal;

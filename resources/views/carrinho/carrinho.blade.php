@@ -122,7 +122,7 @@
             text-align: center;
             border-radius: 5px 5px 5px 5px;
         }
-        .style-botao a {
+       /* .style-botao a {
             font-family: "MontserratAlternates";
             font-size: 0.8em;
             font-style: normal;
@@ -142,7 +142,7 @@
             margin-left: auto;
             margin-left: auto;
             text-align: center;
-        }
+        }*/
     }
 </style>
 
@@ -206,8 +206,8 @@
                         <div class="col">
                             <p class="subtitulos-3 p-2">Cep: 39270-0000</p>
                         </div>
-                        <div class="col style-botao p-2">
-                            <a>alterar Cep</a>
+                        <div class="col p-2">
+                            <button class="style-botao"><a>alterar Cep</a><button>
                         </div>
                     </div>
                     <h4 class="subtitulos-5">Envio a Domicílio </h4>
@@ -241,12 +241,12 @@
                             <p class="subtitulos pt-3"> R$ 1736</p>
                         </div>
                     </div>
-                    <div class="row style-botao">
-                        <div class="col-md-6 p-3">
-                            <button type="submit"><a>Finalizar Compra</a></button>
+                    <div class="row">
+                        <div class="col-md-6 pt-3">
+                            <button class='style-botao' type="submit"><a>Finalizar Compra</a></button>
                         </div>
                         <div class="col-md-6 p-3">
-                            <a>Continuar comprando</a>
+                            <button class='style-botao'><a>Continuar Comprando</a></button>
                         </div>
                     </div>
                 </div>
