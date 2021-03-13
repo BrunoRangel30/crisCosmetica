@@ -135,6 +135,35 @@
         color: #603000;
         font-size: 1em;
     }
+    /*configuraçao formularios*/
+    .borda-input {
+        border: 1px solid #603000 !important;
+    }
+
+     ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #603000 !important;
+        font-family: "MontserratAlternates";
+        font-weight: 900;
+        font-size: 0.9em;
+        /* Firefox */
+    }
+
+    .box-login .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #603000 !important;
+        outline: 0;
+        box-shadow: 0 0 0 0.1rem #4c241563;
+    }
+
+    .lavel-form {
+        color: #603000 !important;
+        font-family: "MontserratAlternates";
+        font-weight: 900;
+        font-size: 0.8em;
+    }
+
 </style>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 

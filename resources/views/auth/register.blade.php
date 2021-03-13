@@ -1,47 +1,102 @@
+@extends('layouts.tema')
+<style>
+    .center-texto {
+        text-align: center;
+    }
 
-<head>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-</head>
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
+    .margin-form {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 50px;
+    }
 
-        <x-jet-validation-errors class="mb-4" />
-
-        <form method="POST" action="{{ route('register') }}">
+    .cores-icones-medio {
+        color: #603000;
+        font-size: 1.4em;
+    }
+</style>
+@section('content')
+<!--cabecalho inicial-->
+@component('home.cabecalho_superior'); @endcomponent
+<!--Menu Principal-->
+@component('home.menu_principal'); @endcomponent
+<div class="container">
+    <div class="box-login shadow-lg bg-white rounded center-elem margin-form lavel-form ">
+        <form method="POST" action="{{ route('login') }}">
             @csrf
-
+            <div class="center-texto pt-4 pb-2">
+                <a class="text-sm text-gray-700 "><i class="far fa-user cores-icones-medio"></i></a>
+                <label class="subtitulos-2 pl-2">Cadastre-se</label>
+            </div>
+            <x-jet-validation-errors class="mb-4 p-2 alert alert-danger" /> @if (session('status'))
+            <div class="mb-4 font-medium text-sm text-green-600">
+                {{ session('status') }}
+            </div>
+            @endif
+            <div class="form-group p-2 ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Nome</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus type="nome" name="email">
+                    </div>
+                    <div class="col-md-4 pt-2">
+                        <label>E-mail</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus type="email" name="email">
+                    </div>
+                    <div class="col-md-3 pt-2">
+                        <label>Senha</label>
+                        <input class="form-control borda-input" type="password" name="password" autocomplete="current-password">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group p-2">
+                <div class="row">
+                    <div class="col-md-2 pt-2">
+                        <label>Data de Nascimento</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus type="email" name="data_de_nascimento">
+                    </div>
+                    <div class="col-md-2 pt-2">
+                        <label>Telefone</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus type="email" name="email">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group p-2">
+                <div class="row">
+                    <div class="col-md-4 pt-2">
+                        <label>Endereço</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus name="endereco">
+                    </div>
+                    <div class="col-md-2 pt-2">
+                        <label>N°</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus name="numero">
+                    </div>
+                    <div class="col-md-3 pt-2">
+                        <label>Bairro</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus type="email" name="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pt-2">
+                        <label>Cidade</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus type="email" name="email">
+                    </div>
+                    <div class="col-md-2 pt-2">
+                        <label>UF</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus type="email" name="email">
+                    </div>
+                    <div class="col-md-3 pt-2">
+                        <label>CEP</label>
+                        <input class="form-control borda-input" :value="old('email')" autofocus type="email" name="email">
+                    </div>
+                </div>
+            </div>
             <div>
-                <x-jet-label for="name" value="{{ __('Name') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-jet-button class="ml-4">
-                    {{ __('Register') }}
-                </x-jet-button>
+                <div class="form-group pt-2 pb-2">
+                    <button style=" width: 110px;" class="style-botao " type="submit "><a>Salvar</a></button>
+                </div>
             </div>
         </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+    </div>
+</div>
+@endsection
